@@ -5,7 +5,7 @@ on:
     inputs:
       docker-build-args:
         default: |
-          help
+          help\n
           me
         description: |
           Docker Build Args. Example: ARG1=1
