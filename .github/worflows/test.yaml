@@ -1,0 +1,17 @@
+name: Tester
+
+on: 
+  workflow_dispatch:
+    inputs:
+      docker-build-args:
+        # default: ''
+        description: |
+          Docker Build Args. Example: ARG1=1
+        required: false
+        type: textarea
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      run: echo ${{ docker-build-args }}
