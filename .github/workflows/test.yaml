@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: test
-      run: echo ${{ docker-build-args }}
+      run: echo ${{ inputs.docker-build-args }}
