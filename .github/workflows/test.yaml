@@ -4,7 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       docker-build-args:
-        # default: ''
+        default: |
+          help
+          me
         description: |
           Docker Build Args. Example: ARG1=1
         required: false
